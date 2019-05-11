@@ -354,19 +354,6 @@ def imputation_accuracy(target, output, inv_mask):
     return mae, rmse
 
 
-def classification_accuracy(logits, labels):
-    """
-    Inputs:
-        logits
-        labels
-    Output: classification accuracy
-    """
-    preds = logits.max(1)[1].type_as(labels)
-    correct = preds.eq(labels).double()
-    correct = correct.sum()
-    return correct / len(labels)
-
-
 def proper_onehot(x, oh_cat_cols):
     """
     Inputs:
