@@ -54,7 +54,7 @@ class GINN(object):
         embedding_dim=128,
         activation=F.relu,
         dropout=0.5,
-        percentile=95,
+        percentile=97.72,
         distance_metric="euclidean",
         weight_missing=False,
         graph=True,
@@ -222,7 +222,7 @@ class GINN(object):
     def fit(
         self,
         epochs=3000,
-        batch_size=32,
+        batch_size=64,
         patience=5,
         auto_lr=1e-3,
         crit_lr=1e-5,
