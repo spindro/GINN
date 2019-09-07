@@ -222,7 +222,7 @@ class GINN(object):
     def fit(
         self,
         epochs=3000,
-        batch_size=64,
+        batch_size=32,
         patience=5,
         auto_lr=1e-3,
         crit_lr=1e-5,
