@@ -269,10 +269,10 @@ def compute_weighted_adj(M, percentile):
             treshold = np.percentile(M[i], percentile)
             M[i][M[i] < treshold] = 0.0
         # second pruning
-        #v = M.flatten()
-        #treshold = np.percentile(v, percentile)
+        v = M.flatten()
+        treshold = np.percentile(v, percentile)
 
-        #M[M < treshold] = 0.0
+        M[M < treshold] = 0.0
         np.fill_diagonal(M, 0.0)
     return M
 
