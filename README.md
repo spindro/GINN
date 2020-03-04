@@ -16,3 +16,16 @@ All the code for the models described in the paper can be found in *ginn/core.py
 ### References
 
 [1] Kipf, T.N. and Welling, M., 2016. **Semi-supervised classification with graph convolutional networks**. arXiv preprint arXiv:1609.02907.
+
+### Cite
+
+Please cite [our paper](https://arxiv.org/abs/1905.01907) if you use this code in your own work:
+
+```
+@article{spinelli2019ginn,
+  title={Missing Data Imputation with Adversarially-trained Graph Convolutional Networks},
+  author={Spinelli, Indro and Scardapane, Simone and Aurelio, Uncini},
+  journal={arXiv preprint arXiv:1905.01907},
+  year={2019}
+}
+```
